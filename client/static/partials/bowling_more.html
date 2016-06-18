@@ -1,0 +1,19 @@
+<h1>Bowling Green Gallery</h1>
+<div id="slides_control">
+    <div>
+        <carousel interval="HC.myInterval">
+            <slide ng-repeat="slide in HC.bg_slides" active="slide.active">
+                <div id='imgDiv'>
+                    <img class='caroImg' ng-src="{{slide.image}}">
+                        <div class="carousel-caption">
+                        <h4>Slide {{$index+1}}</h4>
+                    </div>
+                </div>
+            </slide>
+        </carousel>
+    </div>
+</div>
+<h3>Floor Plans</h3>
+<img ng-click='HC.open(2)' src="static/img/bg/bg_1st_floor.png" alt="siteplan_01" class="sgthumb img-thumbnail">
+<img ng-click='HC.open(3)' src="static/img/bg/bg_2nd_floor.png" alt="siteplan_02" class="sgthumb img-thumbnail">
+<img ng-click='HC.open(4)' src="static/img/bg/bg_3rd_floor.png" alt="siteplan_03" class="sgthumb img-thumbnail">

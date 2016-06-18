@@ -1,0 +1,19 @@
+<h1>Miller Mews</h1>
+<h4>1815A-1821B 20th. Avenue Seattle, WA 98122</h4>
+<h5>Eight townhouses each with 2 bedrooms/1 bathroom
+Capitol Hill 1/2 block north of Madison
+Completed 1997</h5>
+<div id="slides_control">
+    <div>
+        <carousel interval="HC.myInterval">
+            <slide ng-repeat="slide in HC.mm_slides" active="slide.active">
+                <div id='imgDiv'>
+                    <img class='caroImg' ng-src="{{slide.image}}">
+                        <div class="carousel-caption">
+                        <h4>Slide {{$index+1}}</h4>
+                    </div>
+                </div>
+            </slide>
+        </carousel>
+    </div>
+</div>

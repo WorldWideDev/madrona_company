@@ -13,6 +13,11 @@ myApp.config(function ($routeProvider){
         controller: 'HomeController',
         controllerAs: 'HC'
     })
+	.when('/bowlinggreen/gallery', {
+        templateUrl: 'static/partials/bowling_more.html',
+        controller: 'HomeController',
+        controllerAs: 'HC'
+    })
 	.when('/madronaco', {
         templateUrl: 'static/partials/madronaco.html',
         controller: 'HomeController',
@@ -30,6 +35,26 @@ myApp.config(function ($routeProvider){
 	})
 	.when('/secretgarden/details', {
 		templateUrl: 'static/partials/secret_more.html',
+        controller: 'HomeController',
+        controllerAs: 'HC'
+	})
+	.when('/yesler', {
+		templateUrl: 'static/partials/yesler.html',
+        controller: 'HomeController',
+        controllerAs: 'HC'
+	})
+	.when('/tempus', {
+		templateUrl: 'static/partials/tempus.html',
+        controller: 'HomeController',
+        controllerAs: 'HC'
+	})
+	.when('/marion', {
+		templateUrl: 'static/partials/marion.html',
+        controller: 'HomeController',
+        controllerAs: 'HC'
+	})
+	.when('/miller', {
+		templateUrl: 'static/partials/miller.html',
         controller: 'HomeController',
         controllerAs: 'HC'
 	})

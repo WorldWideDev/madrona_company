@@ -1,0 +1,20 @@
+<h1>Tempus Frugit</h1>
+<h4>2501/2505/2507/2511 East John  Seattle, WA 98112</h4>
+<h5>4 condominium townhouses
+2 with 2beds/2baths & 2 with 3beds/2baths
+each approx 1400 square feet
+completed 2000</h5>
+<div id="slides_control">
+    <div>
+        <carousel interval="HC.myInterval">
+            <slide ng-repeat="slide in HC.tem_slides" active="slide.active">
+                <div id='imgDiv'>
+                    <img class='caroImg' ng-src="{{slide.image}}">
+                        <div class="carousel-caption">
+                        <h4>Slide {{$index+1}}</h4>
+                    </div>
+                </div>
+            </slide>
+        </carousel>
+    </div>
+</div>

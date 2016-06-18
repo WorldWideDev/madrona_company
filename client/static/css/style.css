@@ -25,7 +25,7 @@ ul.nav a:hover {
     .madCo h1{
         margin-bottom: 35px;
     }
-    #sgDiv img{
+    .sgthumb{
         width:10%;
         height: 10%;
     }
@@ -37,16 +37,17 @@ ul.nav a:hover {
         margin-top: 50px;
         height: 200px;
     }
-    /*#caroImg{
-        margin:auto;
-        width: 400px;
-    }*/
+    #caroImg{
+        /*height: inherit;*/
+        width: 100%;
+        height: inherit;
+    }
     #slides_control {
-        /*position:absolute;*/
-        /*width: 400px;
+        /*position:absolute;
+        width: 400px;
         left:50%;
-        top:20px;*/
-        /*margin-top: 100px;
+        top:20px;
+        margin-top: 100px;
         margin-left:-200px;*/
     }
 @import url(//fonts.googleapis.com/css?family=Lato:400,900);
@@ -82,8 +83,8 @@ body {
     bottom: -100%;
     left: 0;
     padding: 0 15px;
-    background-color: azure;
     text-align: center;
+    background-color: azure;)
 }
 .info-card .info-card-details::-webkit-scrollbar {
     width: 8px;
@@ -107,7 +108,34 @@ body {
     bottom: 100%;
     padding: 10px 5px;
 }
-.info-card:hover .info-card-details {
+
+.info-card:hover .hover-content{
+    display: block;
+    zoom: 1;
+    background-color: rgba(255, 255, 255, 0.90);
+    -webkit-transition: background 0.5s linear;
+    -moz-transition: background 0.5s linear;
+    -ms-transition: background 0.5s linear;
+    -o-transition: background 0.5s linear;
+    transition: background 0.5s linear;
+}
+.info-card:hover .info-card-header{
+    background-color: white;
+}
+.hover-content{
+    text-align: center;
+    margin: 10% 10%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90%;
+    z-index: 3;
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    vertical-align: middle;
+}
+/*.info-card:hover .info-card-details {
     bottom: 0px;
     overflow: auto;
     padding-bottom: 25px;
@@ -117,7 +145,7 @@ body {
     bottom: 0px;
     padding-top: 45px;
     padding-bottom: 25px;
-}
+}*/
 .info-card .info-card-details .info-card-header h1,	
 .info-card .info-card-details .info-card-header h3 {
     color: rgb(62, 62, 62);
