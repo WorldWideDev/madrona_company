@@ -73,9 +73,23 @@ body {
     overflow: hidden;
     cursor: pointer;
 }
-.info-card > img {
+.info-card .overlay{
+    display: block;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    /*background: rgba(0,0,0,.5);*/
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.overlay > img {
     width: 100px;
     margin-bottom: 60px;
+    opacity: 1;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
 }
 .info-card .info-card-details,
 .info-card .info-card-details .info-card-header  {
@@ -86,7 +100,7 @@ body {
     left: 0;
     padding: 0 15px;
     text-align: center;
-    background-color: azure;)
+    background-color: azure;
 }
 .info-card .info-card-details::-webkit-scrollbar {
     width: 8px;
@@ -121,8 +135,12 @@ body {
     -o-transition: background 0.5s linear;
     transition: background 0.5s linear;
 }
-.info-card:hover .info-card-header{
-    background-color: white;
+.info-card:hover .overlay{
+    /*opacity: 0;*/
+}
+.info-card:hover .overlay > img{
+    opacity: .5;
+    background: #000;
 }
 .hover-content{
     text-align: center;
